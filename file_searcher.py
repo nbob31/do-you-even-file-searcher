@@ -12,7 +12,7 @@ def parse_arguments():
 def find_supported_files(path):
     matching_files = []
     supported_file_types = ['.go', '.java', '.rb', '.py', '.html', '.js', '.txt', '.rtf', '.yaml',
-                            '.yml', '.docx', '.pdf', '.scala', '.kt', '.tf']
+                            '.yml', '.docx', '.pdf', '.scala', '.kt', '.tf', '.hcl']
     for dir_path, dir_name, filenames in os.walk(path):
         for file in filenames:
             for supported_file_type in supported_file_types:
